@@ -25,8 +25,11 @@ int main()
 
 	cout << "Problem 2" << endl << endl;
 	cout << "===================================WHO AM I PERSONAL PROFILE====================================" << endl<<endl;
+	//declare string variables
 	string name = "Annika Koons", nickname = "Snapple", iphone = "Playing IPhone", food = "Watermelon Lemonade Snapple", height = "6'7''", color="Green";
+	//declare int variables
 	int age = 16, pets = 3, favorite=67;
+	//declare double variables
 	double piano = 0.5;
 	cout << "Full Name:			" << name << endl;
 	cout << "Nickname:			" << nickname << endl;
@@ -45,10 +48,13 @@ int main()
 
 	cout << "Problem 3" << endl << endl;
 	cout << "====================================MONTHLY BUDGET BREAKDOWN=====================================" << endl << endl;
+	//declare variables
 	double paycheck = 3000.00, rent = 1000.00, groceries = 275.00, utilities = 150.00, car = 350.00, gas = 150.00, phone = 85.00, internet = 40.00, insurance=200, hb=150;
+	//calculate total and remaining balance using + and - functions
 	double final = (rent + groceries + utilities + car + gas + phone + internet), remaining = (paycheck - (rent + groceries + utilities + car + gas + phone + internet+insurance+hb));
 
 	cout << "Paycheck Recieved:	$"<<paycheck<<endl<<endl;
+	//print variables
 	cout << "---------------------------------------EXPENSES THIS MONTH---------------------------------------" << endl;
 	cout << "Rent:			$" << rent << endl;
 	cout << "Groceries:		$" << groceries << endl;
@@ -63,6 +69,7 @@ int main()
 	cout << "Total Expenses:		$" << final << endl;
 	cout << "Remaining Balance:	$" << remaining<< endl<<endl;
 	cout << "You decided to save 33% of whats left:" <<endl;
+	//find amount saved 33%=1/3
 	cout << "Amount Saved:		$" << (remaining/3)<< endl;
 	cout << "Spending Money Left:	$"<<remaining-(remaining/3)<<endl<<endl;
 	cout << "================================================================================================" << endl;
